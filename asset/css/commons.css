@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+/* =========================
+   FONT
+========================= */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+@font-face {
+    font-family: 'RixInooAriDuri';
+    src: url('../fonts/RixInooAriDuri-Regular.woff2') format('woff2'),
+         url('../fonts/RixInooAriDuri-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* =========================
+   COMMON LAYOUT
+========================= */
+body {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #111111;
+    background-color: #ffffff;
+    word-break: keep-all;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1240px; /* 1200 + 좌우 여백 */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    width: 100%;
+}
+
+/* =========================
+   TYPOGRAPHY - PC
+========================= */
+h1, .h1 {
+    font-family: 'RixInooAriDuri', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+h2, .h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+h3, .h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+h4, .h4 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+h5, .h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+h6, .h6 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.b1 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.b2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.b3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.b4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.b4-bold {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+/* =========================
+   TEXT COLOR
+========================= */
+.text-primary {
+    color: #222;
+}
+
+.text-secondary {
+    color: #666666;
+}
+
+.text-tertiary {
+    color: #8f8f8f;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+/* =========================
+   BACKGROUND COLOR
+========================= */
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+.bg-dark {
+    background-color: #111111;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media screen and (max-width: 1024px) {
+    .inner {
+        padding: 0 16px;
+    }
+
+    h1, .h1 {
+        font-size: 80px;
+    }
+
+    h2, .h2 {
+        font-size: 40px;
+    }
+
+    h3, .h3 {
+        font-size: 34px;
+    }
+
+    h4, .h4 {
+        font-size: 28px;
+    }
+
+    h5, .h5 {
+        font-size: 20px;
+    }
+
+    h6, .h6 {
+        font-size: 18px;
+    }
+
+    .b1 {
+        font-size: 20px;
+    }
+
+    .b2 {
+        font-size: 16px;
+    }
+
+    .b3 {
+        font-size: 15px;
+    }
+
+    .b4,
+    .b4-bold {
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media screen and (max-width: 768px) {
+    .inner {
+        padding: 0 16px;
+    }
+
+    h1, .h1 {
+        font-size: 64px;
+    }
+
+    h2, .h2 {
+        font-size: 34px;
+    }
+
+    h3, .h3 {
+        font-size: 30px;
+    }
+
+    h4, .h4 {
+        font-size: 24px;
+    }
+
+    h5, .h5 {
+        font-size: 20px;
+    }
+
+    h6, .h6 {
+        font-size: 18px;
+    }
+
+    .b1 {
+        font-size: 18px;
+    }
+
+    .b2 {
+        font-size: 16px;
+    }
+
+    .b3 {
+        font-size: 15px;
+    }
+
+    .b4,
+    .b4-bold {
+        font-size: 14px;
+    }
+}

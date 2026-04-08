@@ -1,0 +1,897 @@
+@charset "utf-8";
+
+/* =========================
+   COMMON OVERRIDE MINIMUM
+========================= */
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.point{
+    color: #0ac290;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.kv-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img{
+    display: block;
+}
+
+.navi{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.navi a{
+    color: #fff;
+}
+
+.menu-btn{
+    display: none;
+}
+
+/* =========================
+   KV
+========================= */
+.kv{
+    width: 100%;
+    min-height: 842px;
+    background-image: url(../images/kv_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    isolation: isolate;
+}
+
+.kv::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+}
+
+.kv .tit h1{
+    font-family: 'RixInooAriDuri', sans-serif !important;
+}
+
+.kv-tit{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.tit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tit h1{
+    color: #fff;
+    margin-bottom: 12px;
+    letter-spacing: 0.06em;
+}
+
+.tit h4{
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn button{
+    padding: 13px 143px;
+    border: 0;
+    border-radius: 999px;
+    background: #0EC392;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about{
+    position: relative;
+    width: 100%;
+    background-color: #F8FAFD;
+    background-image: url(../images/ab_bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.about-inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.ab-tit h3{
+    color: #222;
+    margin-bottom: 35px;
+}
+
+.ab-tit p{
+    color: #222;
+}
+
+/* =========================
+   SERVICE
+========================= */
+.servise{
+    position: relative;
+    min-height: 797px;
+}
+
+.servise::after{
+    content: "";
+    width: 100%;
+    height: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d4f9f0;
+}
+
+.servise-tit h3{
+    text-align: center;
+    padding: 110px 0 20px;
+}
+
+.servise-tit p{
+    text-align: center;
+}
+
+.servise-img{
+    display: flex;
+    gap: 56px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* =========================
+   YOUTUBE
+========================= */
+.youtube{
+    background-color: #f5f6f7;
+    min-height: 891px;
+}
+
+.tit h3{
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+.tit p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ytb{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    margin-bottom: 95px;
+}
+
+.ytb1,
+.ytb2{
+    border: 3px solid #53D4B1;
+    background: #fff;
+}
+
+.profile{
+    display: flex;
+}
+
+.p-img{
+    padding: 29px 25px 29px 60px;
+}
+
+.p-img p{
+    color: #818897;
+}
+
+.content{
+    padding: 36px 20px 36px 0;
+}
+
+.content p{
+    margin-bottom: 8px;
+}
+
+.content h6{
+    line-height: 1.4;
+}
+
+/* =========================
+   PROFIT
+========================= */
+.profit-inner{
+    background-color: #d4f9f0;
+    min-height: 950px;
+}
+
+.profit-tit{
+    text-align: center;
+    padding-top: 110px;
+}
+
+.profit-grp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 80px;
+}
+
+.square{
+    padding-top: 102px;
+}
+
+/* =========================
+   DIFFERENCE
+========================= */
+.Difference{
+    background: url(../images/Difference_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 1103px;
+}
+
+.diff-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mint-card{
+    padding-top: 91px;
+    position: relative;
+    right: 40px;
+}
+
+.black-card{
+    padding-top: 207px;
+    position: relative;
+    left: 50px;
+}
+
+/* =========================
+   WASHING
+========================= */
+.wash-inner{
+    max-width: 1312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 110px auto 0;
+}
+
+.wash-img{
+    width: 206px;
+    padding-bottom: 45px;
+}
+
+.wash-tit p{
+    padding-top: 35px;
+}
+
+.washing-line{
+    width: 100%;
+    height: 2px;
+    margin-top: 109px;
+    border: 0;
+    background-color: #F5F6F7;
+}
+
+/* =========================
+   ICON TAP
+========================= */
+.ico-tap{
+    width: 100%;
+    max-width: 1314px;
+    margin: 0 auto;
+}
+
+.icon-top{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.bottom-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    margin-bottom: 100px;
+}
+
+.small-text{
+    color: #0ac290;
+}
+
+.bottom-sub-text{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* =========================
+   DRY CLEANING STATION
+========================= */
+.dry-cieaning-station{
+    background-color: #F5F6F7;
+}
+
+.station-tit{
+    text-align: center;
+}
+
+.station-tit img{
+    display: inline-block;
+    margin-top: 89px;
+    margin-bottom: 30px;
+}
+
+.station-tit p{
+    margin: 35px 0 55px 0;
+}
+
+.dry-bottom-img{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.dry-cieaning-station-inner{
+    padding-bottom: 90px;
+}
+
+.dry-btn{
+    position: relative;
+    display: block;
+    width: 236px;
+    margin: -20px auto 0;
+    padding: 5px 20px;
+    border: 2px solid #0ac290;
+    border-radius: 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* =========================
+   TAB 3
+========================= */
+.tap-3{
+    background-color: #d4f9f0;
+    width: 100%;
+    min-height: 897px;
+    padding-top: 110px;
+}
+
+.tap-3-hedre{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.tap-3-tit{
+    display: flex;
+    justify-content: center;
+}
+
+.dry-tap,
+.stain,
+.Steam{
+    width: 353px;
+    min-height: 54px;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    padding: 14px;
+}
+
+.dry-tap{
+    background-color: #fff;
+}
+
+.stain,
+.Steam{
+    background-color: #f5f6f7;
+    border: 1px solid #bebebe;
+    border-bottom: none;
+}
+
+.dry-tap-inner{
+    width: 100%;
+    max-width: 1058px;
+    min-height: 453px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+
+.dry-img-inner{
+    margin: auto;
+}
+
+.dry-img-inner h6{
+    margin-bottom: 30px;
+}
+
+.dry-img-inner span{
+    color: #0ac290;
+    font-weight: 700;
+}
+
+/* =========================
+   WASHER
+========================= */
+.washer-inner{
+    background-color: #F5F6F7;
+    padding-bottom: 25px;
+}
+
+.washer-tit{
+    text-align: center;
+}
+
+.washer-tit img{
+    display: inline-block;
+    padding-top: 108px;
+    padding-bottom: 45px;
+}
+
+.washer-tit p{
+    padding-top: 35px;
+    padding-bottom: 55px;
+}
+
+.washer-img{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+    overflow: hidden;
+}
+
+.washer-img .swiper-slide img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.washer-img .swiper-pagination{
+    position: static;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.washer-img .swiper-pagination-bullet{
+    width: 32px;
+    height: 9px;
+    background: #bebebe;
+    border-radius: 100px;
+    opacity: 1;
+}
+
+.washer-img .swiper-pagination-bullet-active{
+    background: #747474;
+}
+
+/* =========================
+   EQUIPMENT
+========================= */
+.equipment{
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+
+.equipment-title h3{
+    text-align: center;
+}
+
+.equipment1{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start; /* 추가 */
+    padding-top: 80px;
+}
+
+/* ✅ 이미지 영역 50% */
+.equipment1 > img{
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ✅ 텍스트 영역 50% */
+.equipment-inner{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.equipment-bottom{
+    display: flex;
+    gap: 120px; /* ❗ 기존 240 → 줄임 (핵심) */
+    margin-top: 35px;
+}
+
+.equipment-point{
+    color: #0ac290;
+}
+
+.equipment-tit h3{
+    margin-bottom: 55px;
+}
+
+.equipment-left,
+.equipment-right{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+/* ✅ 줄바꿈 방지 (핵심) */
+.equipment-right p{
+    white-space: nowrap;
+}
+
+/* =========================
+   PROCEDURE
+========================= */
+.procedure{
+    background: #F5F6F7;
+    padding: 110px 0 100px;
+}
+
+.procedure-title{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.procedure-title p{
+    margin-top: 35px;
+}
+
+.procedure-inner{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px 45px;
+    overflow: hidden;
+}
+
+.procedure-inner .swiper-wrapper{
+    justify-content: flex-start;
+}
+
+.procedure-inner.is-end .swiper-wrapper{
+    justify-content: flex-start;
+}
+
+.counseling,
+.analysis,
+.installation,
+.contract,
+.construction,
+.education,
+.open{
+    background: #fff;
+    padding: 65px 30px;
+    border-radius: 20px;
+}
+
+.procedure-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.procedure-inner .swiper-pagination{
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.procedure-inner .procedure-pagination.swiper-pagination-progressbar{
+    width: calc((100% - 40px) / 3);
+    height: 18px;
+    border-radius: 999px;
+    background: #bebebe;
+    overflow: hidden;
+    display: block;
+    margin: 45px auto 0;
+}
+
+.procedure-inner .procedure-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: #747474;
+    border-radius: 999px;
+}
+
+.procedure-text h6{
+    margin-bottom: 10px;
+}
+
+.procedure-text p{
+    margin-bottom: 35px;
+}
+
+.procedure-text h5{
+    color: #0ac290;
+    margin: 35px 0;
+}
+
+/* =========================
+   QUESTION
+========================= */
+.question-text{
+    margin-bottom: 80px;
+}
+
+.question-text h3{
+    text-align: center;
+}
+
+.question-inner{
+    padding: 110px 0 138px;
+}
+
+.q,
+.q1{
+    width: 100%;
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+.q{
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.q1{
+    border-bottom: 1px solid #222;
+}
+
+.q-inner-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.q-inner-top p{
+    padding-bottom: 34px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width:1279px){
+    .procedure-inner .procedure-pagination.swiper-pagination-progressbar{
+        width: calc((100% - 20px) / 2);
+    }
+
+    .equipment-bottom{
+        gap: 120px;
+    }
+
+    .bottom-inner{
+        gap: 80px;
+    }
+}
+
+@media (max-width:768px){
+    .kv{
+        min-height: auto;
+        padding-top: 70px;
+    }
+
+    .kv-header{
+        padding: 12px 0 0;
+        box-sizing: border-box;
+    }
+
+    .navi{
+        display: none;
+    }
+
+    .clear{
+        display: none;
+    }
+
+    .menu-btn{
+        display: block;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        line-height: 1;
+    }
+
+    .menu-btn img{
+        display: block;
+        width: 32px;
+    }
+
+    .logo img{
+        width: 86px;
+        height: auto;
+    }
+
+    .tit h1{
+        padding-bottom: 4px;
+    }
+
+    .tit h4{
+        margin-bottom: 8px;
+    }
+
+    .btn{
+        padding: 0 0 40px;
+    }
+
+    .btn button{
+        padding: 8px 46px;
+    }
+
+    .about-inner{
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background-position: bottom;
+        background-size: 100% auto;
+    }
+
+    .ab-tit h3{
+        margin-bottom: 10px;
+    }
+
+    .servise-img{
+        flex-direction: column;
+    }
+
+    .sales-inner{
+        background: #D4F9F0;
+    }
+
+    .ytb,
+    .profit-grp,
+    .diff-card,
+    .icon-top,
+    .bottom-inner,
+    .dry-bottom-img,
+    .equipment1,
+    .dry-tap-inner{
+        flex-direction: column;
+    }
+
+    .Difference{
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .mint-card,
+    .black-card{
+        position: static;
+        padding-top: 0;
+    }
+
+    .tap-3{
+        min-height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .tap-3-tit{
+        flex-direction: column;
+    }
+
+    .dry-tap,
+    .stain,
+    .Steam{
+        width: 100%;
+        border-radius: 12px;
+        border-bottom: 1px solid #bebebe;
+    }
+
+    .dry-tap-inner{
+        padding: 24px;
+    }
+
+    .washer-tit img{
+        padding-top: 60px;
+        padding-bottom: 24px;
+    }
+
+    .washer-tit p{
+        padding-bottom: 32px;
+    }
+
+    .washer-img{
+        padding: 0 16px;
+    }
+
+    .equipment-bottom{
+        gap: 40px;
+    }
+
+    .procedure{
+        padding: 60px 0;
+    }
+
+    .procedure-title{
+        padding-bottom: 40px;
+    }
+
+    .procedure-inner{
+        padding: 0 16px 45px;
+    }
+
+    .procedure-inner .procedure-pagination.swiper-pagination-progressbar{
+        width: 100%;
+    }
+
+    .question-inner{
+        padding: 60px 0;
+    }
+
+    .question-text{
+        margin-bottom: 40px;
+    }
+
+    .q-inner-top p{
+        padding-bottom: 20px;
+    }
+}
