@@ -26,12 +26,17 @@
             </button>
 
             <nav class="navi" id="mainNav">
-                <a class="b2-bold text-white" href="#">창업안내</a>
-                <a class="b2-bold text-white" href="#">워시팩토리</a>
-                <a class="b2-bold text-white" href="#">장비안내</a>
-                <a class="b2-bold text-white" href="#">창업절차</a>
-                <a class="b2-bold text-white" href="#">창업문의</a>
-                <a class="b2-bold text-white" href="#">Q&amp;A</a>
+                <button class="close-btn" id="menuClose" aria-label="메뉴 닫기">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <a class="b2-bold text-white" href="#about">창업안내</a>
+                <a class="b2-bold text-white" href="#washing">워시팩토리</a>
+                <a class="b2-bold text-white" href="#equipment">장비안내</a>
+                <a class="b2-bold text-white" href="#procedure">창업절차</a>
+                <a class="b2-bold text-white" href="#qna">Q&amp;A</a>
+                <a class="b2-bold text-white" href="#contact">창업문의</a>
             </nav>
             <div class="header-spacer"></div>
         </div>
@@ -45,7 +50,7 @@
                 <h4 class="h3 text-white">세탁방 매출의 새로운 공식<br>스마트 무인 런드리 시스템</h4>
 
                 <div class="btn">
-                    <button class="b1">창업 문의하기</button>
+                    <a href="#contact" class="btn-contact b1">창업 문의하기</a>
                 </div>
             </div>
         </div>
@@ -53,7 +58,7 @@
 
     <!-- //////////////////////////////////////////////////////////////////////// -->
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="inner about-inner">
             <div class="ab-tit">
                 <h3 class="h3 text-primary">
@@ -254,7 +259,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- //////////////////////////////////////////////////////////////////////// -->
@@ -264,7 +268,7 @@
 
 
 
-    <section class="Washing">
+    <section class="Washing" id="washing">
         <div class="inner wash-inner">
             <div class="wash-img">
                 <img src="asset/images/bear_rundry.png" alt="곰이미지">
@@ -487,7 +491,7 @@
     </section>
     <!-- ///////////////////////////////////////////////////////////////////// -->
 
-    <section class="equipment">
+    <section class="equipment" id="equipment">
         <div class="inner">
             <div class="equipment-title">
                 <h3 class="h3 text-primary">워시팩토리 장비소개</h3>
@@ -546,7 +550,7 @@
     </section>
     <!-- ///////////////////////////////////////////////////////////////////// -->
 
-    <section class="procedure">
+    <section class="procedure" id="procedure">
         <div class="inner">
             <div class="procedure-title">
                 <h3 class="h3 text-primary">창업절차</h3>
@@ -675,7 +679,7 @@
     </section>
     <!-- ///////////////////////////////////////////////////////////////////// -->
 
-    <section class="question">
+    <section class="question" id="qna">
         <div class="inner question-inner">
             <div class="question-text">
                 <h3 class="h3 text-primary">자주 묻는 질문</h3>
@@ -772,7 +776,7 @@
     <!-- ///////////////////////////////////////////////////////////////////// -->
 
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-inner">
             <div class="contact-header">
                 <img src="asset/images/Contact_bear.png" alt="곰 이미지">
@@ -855,37 +859,70 @@
             <div class="footer-logo">
                 <img src="asset/images/kv_logo.svg" alt="푸터로고">
             </div>
-            <div class="footer-inner">
-                <div class="footer-inner-1">
-                    <p class="b4">(주)워시팩토리</p>
-                    <p class="b4">대표자 : 홍길동
-                    <p class="b4">사업자 등록번호 : 000-00-00000</p>
-                    <p class="b4">주소 : 경기도 ○○시 ○○로 00-00</p>
-                </div>
-                <div class="footer-inner-2">
-                    <p class="b4">개인정보처리방침</p>
-                    <p class="b4">이용약관</p>
-                    <p class="b4">고정형 영상정보처리기기 운영/관리 방침</p>
-                </div>
+            <div class="footer-info">
+                <p class="b4 footer-company">(주)워시팩토리</p>
+                <p class="b4">대표자 : 홍길동 ㅣ 사업자 등록번호 : 000-00-00000 ㅣ 주소 : 경기도 ○○시 ○○로 00-00</p>
+                <p class="b4">워시팩토리 창업 문의 : 1544-0000 ㅣ 제휴문의 : washfactory@washfactory.co.kr</p>
+                <p class="b4 footer-links">개인정보처리방침 ㅣ 이용약관 ㅣ 고정형 영상정보처리기기 운영/관리 방침</p>
             </div>
-
         </div>
     </section>
 
-
+    <!-- Top Button -->
+    <button id="topBtn" class="top-btn" aria-label="맨 위로 이동">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4L4 12H9V20H15V12H20L12 4Z" fill="currentColor"/>
+        </svg>
+    </button>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const menuBtn = document.getElementById('menuToggle');
             const nav = document.getElementById('mainNav');
 
+            const closeBtn = document.getElementById('menuClose');
+
+            function openMenu() {
+                nav.classList.add('open');
+                menuBtn.classList.add('hidden');
+                menuBtn.setAttribute('aria-expanded', 'true');
+            }
+
+            function closeMenu() {
+                nav.classList.remove('open');
+                menuBtn.classList.remove('hidden');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            }
+
             if (menuBtn && nav) {
-                menuBtn.addEventListener('click', function () {
-                    const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
-                    menuBtn.setAttribute('aria-expanded', String(!expanded));
-                    nav.classList.toggle('open');
+                menuBtn.addEventListener('click', openMenu);
+
+                // 닫기 버튼 클릭 시 메뉴 닫기
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', closeMenu);
+                }
+
+                // 메뉴 링크 클릭 시 메뉴 닫기
+                const navLinks = nav.querySelectorAll('a');
+                navLinks.forEach(function (link) {
+                    link.addEventListener('click', closeMenu);
                 });
             }
+
+            // Top Button
+            const topBtn = document.getElementById('topBtn');
+            
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) {
+                    topBtn.classList.add('show');
+                } else {
+                    topBtn.classList.remove('show');
+                }
+            });
+
+            topBtn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
 
             const iconItems = document.querySelectorAll('.icon-top .dry-img, .icon-top .system-img, .icon-top .mony-img');
             const tabPanels = document.querySelectorAll('.tab-panel');
@@ -1031,6 +1068,7 @@
                     }
                 });
             }
+
         });
     </script>
 </body>
