@@ -80,10 +80,19 @@
                 <p class="b1 text-primary">본사 결제시스템을 통한 실제매출, 확인 가능합니다.</p>
             </div>
 
-            <div class="servise-img">
+            <div class="servise-img pc-servise-img">
                 <div class="servise-img-box"><img src="asset/images/sr_grp.svg" alt="영수증 이미지"></div>
                 <div class="servise-img-box"><img src="asset/images/sr_grp2.svg" alt="영수증 이미지"></div>
                 <div class="servise-img-box"><img src="asset/images/sr_grp3.svg" alt="영수증 이미지"></div>
+            </div>
+
+            <div class="servise-img-swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="asset/images/sr_grp.svg" alt="영수증 이미지"></div>
+                    <div class="swiper-slide"><img src="asset/images/sr_grp2.svg" alt="영수증 이미지"></div>
+                    <div class="swiper-slide"><img src="asset/images/sr_grp3.svg" alt="영수증 이미지"></div>
+                </div>
+                <div class="swiper-pagination servise-pagination"></div>
             </div>
         </div>
     </section>
@@ -138,13 +147,111 @@
             <div class="profit-tit">
                 <h3 class="h3 text-primary">합리적인 비용으로<br>안정적인 사업 수익을 창출해보세요</h3>
             </div>
+
             <div class="profit-grp">
                 <div class="circle">
                     <img class="pc-circle-grp" src="asset/images/circle_grp.svg" alt="pc원형그래프">
                     <img class="mb-circle-grp" src="asset/images/mb-circle-grp.svg" alt="mb원형 그래프">
                 </div>
                 <div class="square">
-                    <img src="asset/images/square_grp.svg" alt="네모 그래프">
+                    <img class="pc-square-grp" src="asset/images/square_grp.svg" alt="네모 그래프">
+                    <img class="mb-square-grp" src="asset/images/mb_square_grp.svg" alt="모바일 네모">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <section class="Difference">
+        <div class="difference-card">
+            <div class="black">
+                <h4 class="black-top">A사 창업비용</h4>
+                <div class="table-bg">
+                    <table class="tab-black">
+                        <tr>
+                            <td>가맹비</td>
+                            <td>400만 원</td>
+                        </tr>
+                        <tr>
+                            <td>보증금</td>
+                            <td>300만 원</td>
+                        </tr>
+                        <tr>
+                            <td>로열티</td>
+                            <td>300만 원</td>
+                        </tr>
+                        <tr>
+                            <td>인테리어 시공</td>
+                            <td>2500만 원</td>
+                        </tr>
+                        <tr>
+                            <td>세탁기기 및 자판기</td>
+                            <td>2700만 원</td>
+                        </tr>
+                        <tr>
+                            <td>키오스크 비용</td>
+                            <td>350만 원</td>
+                        </tr>
+                        <tr>
+                            <td>간판 및 사인물</td>
+                            <td>155만 원</td>
+                        </tr>
+                        <tr>
+                            <td>장비연결</td>
+                            <td>100만 원</td>
+                        </tr>
+                    </table>
+                    <div class="bottom-black-card">
+                        <h4 class="bg-black">약 6,800만 원</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="mint">
+                <img src="asset/images/kv_logo.svg" alt="">
+                <div class="table-bg-mint">
+                    <table class="tab-mint">
+                        <tr>
+                            <td>가맹비</td>
+                            <td><span>500만 원</span></td>
+                        </tr>
+                        <tr>
+                            <td>보증금</td>
+                            <td><span>200만 원</span></td>
+                        </tr>
+                        <tr>
+                            <td>로열티</td>
+                            <td><span>300만 원</span></td>
+                        </tr>
+                        <tr>
+                            <td>인테리어 시공</td>
+                            <td>1800만 원</td>
+                        </tr>
+                        <tr>
+                            <td>세탁기기 및 자판기</td>
+                            <td>2500만 원</td>
+                        </tr>
+                        <tr>
+                            <td>키오스크 비용</td>
+                            <td>300만 원</td>
+                        </tr>
+                        <tr>
+                            <td>간판 및 사인물</td>
+                            <td>130만 원</td>
+                        </tr>
+                        <tr>
+                            <td>장비연결</td>
+                            <td>100만 원</td>
+                        </tr>
+                    </table>
+                    <div class="bottom-mint">
+                        <h4><span>약 5,840만 원</span></h4>
+                    </div>
+                    <div class="bottom-mint-card">
+                        <h2 class="bg-mint">천만 원 <span>지원</span></h2>
+                    </div>
                 </div>
             </div>
 
@@ -152,17 +259,9 @@
     </section>
     <!-- //////////////////////////////////////////////////////////////////////// -->
 
-    <section class="Difference">
-        <div class="inner diff-card">
-            <div class="black-card">
-                <img src="asset/images/black_card.svg" alt="검정카드">
-            </div>
-            <div class="mint-card">
-                <img src="asset/images/mint_card.svg" alt="민트카드">
-            </div>
-        </div>
-    </section>
-    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+
+
 
 
     <section class="Washing">
@@ -186,39 +285,97 @@
     <section class="ico-tap">
         <div class="inner">
             <div class="icon-top">
-                <div class="dry-img">
+                <div class="dry-img active" data-tab="dry">
                     <img src="asset/images/icon/dry.svg" alt="드라이 아이콘">
                     <p class="b2 text-primary">드라이클리닝</p>
                 </div>
-                <div class="system-img">
+                <div class="system-img" data-tab="system">
                     <img src="asset/images/icon/system.svg" alt="무인 아이콘">
                     <p class="b2 text-primary">무인시스템</p>
                 </div>
-                <div class="mony-img">
+                <div class="mony-img" data-tab="money">
                     <img src="asset/images/icon/money.svg" alt="매출 아이콘">
                     <p class="b2 text-primary">안정적매출</p>
                 </div>
             </div>
 
-            <div class="bottom-inner">
-                <div class="dry-img">
-                    <img src="asset/images/drycleaning.png" alt="드라이클리닝">
+            <div class="tab-content-wrapper">
+                <div class="bottom-inner tab-panel active" data-tab="dry">
+                    <div class="tab-img">
+                        <img src="asset/images/drycleaning.png" alt="드라이클리닝">
+                    </div>
+                    <div class="dry-text">
+                        <p class="small-text b4-bold">Dry cieaning system</p>
+                        <h3 class="h3 text-primary">빨래방에<br><span>드라이클리닝을</span> 더하다</h3>
+                        <p class="bottom-sub-text b1 text-primary">빨래방과 세탁소를 하나로, 자체 개발<br>무인 세탁 시스템</p>
+                        <p class="check-text b1 text-primary">
+                            ✔ 자체 개발 드라이클리닝 시스템<br>
+                            ✔ 더 편리하고 효율적인 세탁<br>
+                            ✔ 고객 맞춤 세탁 서비스<br><br>
+                            새로운 셀프 빨래방을 경험하세요.
+                        </p>
+                    </div>
                 </div>
-                <div class="dry-text">
-                    <p class="small-text b4-bold">Dry cieaning system</p>
-                    <h3 class="h3 text-primary">빨래방에<br>드라이클리닝을 더하다</h3>
-                    <p class="bottom-sub-text b1 text-primary">빨래방과 세탁소를 하나로, 자체 개발<br> 무인 세탁 시스템</p>
-                    <p class="check-text b1 text-primary">
-                        ✔ 자체 개발 드라이클리닝 시스템<br>
-                        ✔ 더 편리하고 효율적인 세탁<br>
-                        ✔ 고객 맞춤 세탁 서비스<br><br>
-                        새로운 셀프 빨래방을 경험하세요.
-                    </p>
+
+                <div class="bottom-inner tab-panel" data-tab="system">
+                    <div class="tab-img">
+                        <img src="asset/images/manless.png" alt="무인 이미지">
+                    </div>
+                    <div class="dry-text">
+                        <p class="small-text b4-bold">24-hour Service</p>
+                        <h3 class="h3 text-primary"><span>무인 시스템과</span> 본사 운영 지원이<br>결합해 더욱 완벽한 창업</h3>
+                        <p class="bottom-sub-text b1 text-primary">365일 24시간 무인 운영으로<br>부가 수입 창출</p>
+                        <p class="check-text b1 text-primary">
+                            ✔ 본사 운영 지원 시스템<br>
+                            ✔ 효율적인 매장 관리<br>
+                            ✔ 안정적인 운영 구조<br><br>
+                            초보자도 부담 없이 시작할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bottom-inner tab-panel" data-tab="money">
+                    <div class="tab-img">
+                        <img src="asset/images/profit.png" alt="수익 이미지">
+                    </div>
+                    <div class="dry-text">
+                        <p class="small-text b4-bold">Stable revenue generation</p>
+                        <h3 class="h3 text-primary"><span>안정적인 수익 확보</span>가 가능한<br>소자본 성공 창업</h3>
+                        <p class="bottom-sub-text b1 text-primary">빨래방과 드라이클리닝 매출을<br>동시에 확보</p>
+                        <p class="check-text b1 text-primary">
+                            ✔ 초기 비용 부담 최소화<br>
+                            ✔ 고효율 세탁 장비 지원<br>
+                            ✔ 안정적인 수익 구조 설계<br><br>
+                            부담은 줄이고, 수익은 높인<br>
+                            실속 있는 창업을 시작해보세요.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+                <div class="marquee-item"><img src="asset/images/icon/narquee.svg" alt="DRY CLEANING STATION"></div>
+            </div>
+        </div>
     </section>
-     <!-- ///////////////////////////////////////////////////////////////////// -->
+    <!-- ///////////////////////////////////////////////////////////////////// -->
 
     <section class="dry-cieaning-station">
         <div class="inner dry-cieaning-station-inner">
@@ -257,20 +414,48 @@
             </div>
 
             <div class="tap-3-tit">
-                <div class="dry-tap b1 active">드라이 클리닝</div>
-                <div class="stain b1">얼룩제거</div>
-                <div class="Steam b1">스팀터널</div>
+                <div class="dry-tap b1 active" data-tap3="dry">드라이 클리닝</div>
+                <div class="stain-tab b1" data-tap3="stain">얼룩제거</div>
+                <div class="steam-tab b1" data-tap3="steam">스팀터널</div>
             </div>
 
-            <div class="dry-tap-inner">
-                <img src="asset/images/dry_tap.png" alt="드라이 이미지">
-                <div class="dry-img-inner">
-                    <h6 class="h4 text-primary">국내 최초 리얼스타 도입<br>친환경 드라이클리닝 서비스</h6>
-                    <p class="b1 text-primary">
-                        국내 세탁 서비스 최초로 최고급 드라이클리닝 머신을<br>
-                        도입해 사용하고 있습니다.
-                        <span>하이드로카본용제를 사용해<br>세정력을 높이고, 의류 손상을 방지합니다.</span>
-                    </p>
+            <div class="tap-3-content">
+                <div class="dry-tap-inner tap3-panel active" data-tap3="dry">
+                    <img src="asset/images/dry_tap.png" alt="드라이 이미지">
+                    <div class="dry-img-inner">
+                        <h6 class="h4 text-primary">국내 최초 리얼스타 도입<br>친환경 드라이클리닝 서비스</h6>
+                        <p class="b1 text-primary">
+                            국내 세탁 서비스 최초로 최고급 드라이클리닝 머신을<br>
+                            도입해 사용하고 있습니다.
+                            <span>하이드로카본용제를 사용해<br>세정력을 높이고, 의류 손상을 방지합니다.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="dry-tap-inner tap3-panel" data-tap3="stain">
+                    <img src="asset/images/stain.png" alt="얼룩이미지">
+                    <div class="dry-img-inner">
+                        <h6 class="h4 text-primary">고객의 요청 사항에 딱 맞춘 세탁 케어<br>집중 얼룩 제거 서비스</h6>
+                        <p class="b1 text-primary">
+                            소재, 얼룩, 세탁 방법, 고객의 요청사항에 따라 맞춤<br>
+                            세탁으로 진행됩니다. 얼룩이 있는 의류는 세탁 전문가가<br>
+                            <span>오염 원인을 분석</span>해 <span>손상 없이 얼룩을 제거</span>합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="dry-tap-inner tap3-panel" data-tap3="steam">
+                    <img src="asset/images/steam.png" alt="스팀 이미지">
+                    <div class="dry-img-inner">
+                        <h6 class="h4 text-primary">스팀 터널로<br>주름 ∙ 세균 ∙ 바이러스 완벽 제거</h6>
+                        <p class="b1 text-primary">
+                            STEP 01<br>
+                            약 <span>100℃에 가까운 수증기</span>를 뿜어내 주름을 펴줍니다.<br><br>
+                            STEP 02<br>
+                            <span>고온 바람</span>으로 옷에 남아있는 먼지는 물론 세균과<br>
+                            바이러스를 제거합니다.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -496,10 +681,10 @@
                 <h3 class="h3 text-primary">자주 묻는 질문</h3>
             </div>
 
-            <div class="q">
+            <div class="q-item active">
                 <div class="q-inner-top">
                     <p class="b1 text-primary">세탁 경험이나 기술 없이도 창업할 수 있나요?</p>
-                    <img src="asset/images/icon/button_q1.svg" alt="버튼 누름">
+                    <img class="q-toggle-btn" src="asset/images/icon/button_q2.svg" alt="토글 버튼">
                 </div>
                 <div class="q-inner-bottom">
                     <p class="b2 text-primary">
@@ -509,31 +694,51 @@
                 </div>
             </div>
 
-            <div class="q1">
+            <div class="q-item">
                 <div class="q-inner-top">
                     <p class="b1 text-primary">매장에서 발생한 세탁 클레임은 어떻게 처리하나요?</p>
-                    <img src="asset/images/icon/button_q2.svg" alt="버튼 안누름">
+                    <img class="q-toggle-btn" src="asset/images/icon/button_q2.svg" alt="토글 버튼">
+                </div>
+                <div class="q-inner-bottom">
+                    <p class="b2 text-primary">
+                        고객 클레임은 매뉴얼에 따라 접수 후 확인 절차를 거쳐 처리합니다. 본사 또는 운영 지원팀이<br>상담 및 해결 과정을 지원하며, 필요 시 보상 기준에 따라 빠르게 대응합니다.
+                    </p>
                 </div>
             </div>
 
-            <div class="q1">
+            <div class="q-item">
                 <div class="q-inner-top">
                     <p class="b1 text-primary">매장 오픈까지 소요 기간은 얼마나 걸리나요?</p>
-                    <img src="asset/images/icon/button_q2.svg" alt="버튼 안누름">
+                    <img class="q-toggle-btn" src="asset/images/icon/button_q2.svg" alt="토글 버튼">
+                </div>
+                <div class="q-inner-bottom">
+                    <p class="b2 text-primary">
+                       상권 분석 및 계약 이후 보통 4주 ~ 8주 정도의 준비 기간이 소요됩니다.<br>인테리어 공사, 장비 설치, 운영 교육 등을 거쳐 매장이 오픈됩니다.
+                    </p>
                 </div>
             </div>
 
-            <div class="q1">
+            <div class="q-item">
                 <div class="q-inner-top">
                     <p class="b1 text-primary">초기 창업 비용은 어느 정도인가요?</p>
-                    <img src="asset/images/icon/button_q2.svg" alt="버튼 안누름">
+                    <img class="q-toggle-btn" src="asset/images/icon/button_q2.svg" alt="토글 버튼">
+                </div>
+                <div class="q-inner-bottom">
+                    <p class="b2 text-primary">
+                        창업 비용은 매장 규모, 장비 수량, 인테리어 등에 따라 달라집니다. 보통 장비, 인테리어, <br>시스템 구축 등을 포함해 상담을 통해 구체적인 비용 안내를 받을 수 있습니다.
+                    </p>
                 </div>
             </div>
 
-            <div class="q1">
+            <div class="q-item">
                 <div class="q-inner-top">
                     <p class="b1 text-primary">기존 점포를 인수하거나 양도받을 수도 있나요?</p>
-                    <img src="asset/images/icon/button_q2.svg" alt="버튼 안누름">
+                    <img class="q-toggle-btn" src="asset/images/icon/button_q2.svg" alt="토글 버튼">
+                </div>
+                <div class="q-inner-bottom">
+                    <p class="b2 text-primary">
+                        네 가능합니다. 기존 운영 중인 매장을 양도·양수 형태로 인수할 수 있으며, <br>이 경우 초기 구축 비용을 줄이고 비교적 빠르게 운영을 시작할 수 있는 장점이 있습니다.
+                    </p>
                 </div>
             </div>
         </div>
@@ -567,10 +772,10 @@
     <!-- ///////////////////////////////////////////////////////////////////// -->
 
 
-    <section class="contact" style="display: none;">
+    <section class="contact">
         <div class="contact-inner">
             <div class="contact-header">
-                <img src="asset/images/bear_contact.png" alt="곰 이미지">
+                <img src="asset/images/Contact_bear.png" alt="곰 이미지">
                 <h3 class="h3 text-white">창업문의</h3>
                 <p class="b2 text-white">창업 비용이 궁금하다면 지금 바로확인하세요!</p>
             </div>
@@ -591,6 +796,12 @@
                     <select class="form-select">
                         <option value="" disabled selected>선택해주세요.</option>
                         <option value="seoul">서울</option>
+                        <option value="gyeonggi">경기</option>
+                        <option value="incheon">인천</option>
+                        <option value="daegu">대구</option>
+                        <option value="Gwangju">광주</option>
+                        <option value="daejeon">대전</option>
+                        <option value="ulsan">울산</option>
                         <option value="busan">부산</option>
                         <!-- 추가 옵션 -->
                     </select>
@@ -600,8 +811,13 @@
                     <label class="b2">유입경로 <span class="required">*</span></label>
                     <select class="form-select">
                         <option value="" disabled selected>선택해주세요.</option>
-                        <option value="sns">SNS</option>
-                        <option value="search">검색</option>
+                        <option value="instar">인스타</option>
+                        <option value="naver">네이버</option>
+                        <option value="google">구글 검색</option>
+                        <option value="youtube">유튜브</option>
+                        <option value="advertising">온라인 광고</option>
+                        <option value="blog">블로그</option>
+                        <option value="introduction">지인 소개</option>
                         <!-- 추가 옵션 -->
                     </select>
                 </div>
@@ -610,8 +826,10 @@
                     <label class="b2">통화 희망 시간 <span class="required">*</span></label>
                     <select class="form-select">
                         <option value="" disabled selected>선택해주세요.</option>
-                        <option value="am">오전</option>
-                        <option value="pm">오후</option>
+                        <option value="colck1">12:00~15:00</option>
+                        <option value="colck2">15:00~18:00</option>
+                        <option value="colck3">18:00~21:00</option>
+                        <option value="colck3">21:00~24:00</option>
                         <!-- 추가 옵션 -->
                     </select>
                 </div>
@@ -630,6 +848,31 @@
             </div>
         </div>
     </section>
+    <!-- ///////////////////////////////////////////////////////////////////// -->
+
+    <section class="footer">
+        <div class="fotter-bg">
+            <div class="footer-logo">
+                <img src="asset/images/kv_logo.svg" alt="푸터로고">
+            </div>
+            <div class="footer-inner">
+                <div class="footer-inner-1">
+                    <p class="b4">(주)워시팩토리</p>
+                    <p class="b4">대표자 : 홍길동
+                    <p class="b4">사업자 등록번호 : 000-00-00000</p>
+                    <p class="b4">주소 : 경기도 ○○시 ○○로 00-00</p>
+                </div>
+                <div class="footer-inner-2">
+                    <p class="b4">개인정보처리방침</p>
+                    <p class="b4">이용약관</p>
+                    <p class="b4">고정형 영상정보처리기기 운영/관리 방침</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -643,6 +886,64 @@
                     nav.classList.toggle('open');
                 });
             }
+
+            const iconItems = document.querySelectorAll('.icon-top .dry-img, .icon-top .system-img, .icon-top .mony-img');
+            const tabPanels = document.querySelectorAll('.tab-panel');
+
+            iconItems.forEach(function (item) {
+                item.addEventListener('click', function () {
+                    const targetTab = this.getAttribute('data-tab');
+
+                    iconItems.forEach(function (el) {
+                        el.classList.remove('active');
+                    });
+                    this.classList.add('active');
+
+                    tabPanels.forEach(function (panel) {
+                        panel.classList.remove('active');
+                        if (panel.getAttribute('data-tab') === targetTab) {
+                            panel.classList.add('active');
+                        }
+                    });
+                });
+            });
+
+            const tap3Tabs = document.querySelectorAll('.tap-3-tit > div');
+            const tap3Panels = document.querySelectorAll('.tap3-panel');
+
+            tap3Tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    const targetTap3 = this.getAttribute('data-tap3');
+
+                    tap3Tabs.forEach(function (el) {
+                        el.classList.remove('active');
+                    });
+                    this.classList.add('active');
+
+                    tap3Panels.forEach(function (panel) {
+                        panel.classList.remove('active');
+                        if (panel.getAttribute('data-tap3') === targetTap3) {
+                            panel.classList.add('active');
+                        }
+                    });
+                });
+            });
+
+            const qItems = document.querySelectorAll('.q-item');
+            qItems.forEach(function (item) {
+                const toggleBtn = item.querySelector('.q-inner-top');
+                toggleBtn.addEventListener('click', function () {
+                    const isActive = item.classList.contains('active');
+                    
+                    qItems.forEach(function (el) {
+                        el.classList.remove('active');
+                    });
+                    
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
         });
     </script>
 
@@ -666,6 +967,31 @@
                         768: { slidesPerView: 2 },
                         1024: { slidesPerView: 3 },
                         1280: { slidesPerView: 4 },
+                    },
+                });
+            }
+
+            const serviseSwiperEl = document.querySelector('.servise-img-swiper');
+
+            if (serviseSwiperEl) {
+                new Swiper(serviseSwiperEl, {
+                    effect: 'creative',
+                    grabCursor: true,
+                    loop: true,
+                    speed: 400,
+                    creativeEffect: {
+                        prev: {
+                            shadow: false,
+                            translate: ['-120%', 0, -500],
+                        },
+                        next: {
+                            shadow: false,
+                            translate: ['120%', 0, -500],
+                        },
+                    },
+                    pagination: {
+                        el: '.servise-pagination',
+                        clickable: true,
                     },
                 });
             }
